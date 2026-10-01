@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import {useState} from "react";
 import StudentList from "./StudentList";
 import "./App.css";
 
