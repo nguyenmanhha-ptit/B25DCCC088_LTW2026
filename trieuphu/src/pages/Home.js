@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { PRIZES, TIME_PER_QUESTION, formatMoney } from '../data';
 
-const Home = ({ playerName, onNameChange }) => {
+const Home = ({ playerName, onNameChange, history }) => {
   const navigate = useNavigate();
+  const best = history.reduce((top, h) => (!top || h.prize > top.prize ? h : top), null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +19,11 @@ const Home = ({ playerName, onNameChange }) => {
         <li>Câu 5, 10, 15 là các mốc an toàn. Trả lời sai chỉ nhận tiền của mốc cao nhất đã vượt qua.</li>
         <li>Trả lời đúng cả {PRIZES.length} câu để nhận {formatMoney(PRIZES[PRIZES.length - 1])}.</li>
       </ul>
+      {best && (
+        <p className="record">
+          Kỷ lục: {formatMoney(best.prize)} – {best.name}
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <label>
           Tên người chơi:{' '}

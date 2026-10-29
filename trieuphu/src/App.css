@@ -188,3 +188,36 @@ button:disabled {
 .result p {
   font-size: 18px;
 }
+
+.record {
+  font-weight: bold;
+  color: #e65100;
+}
+
+.lifelines {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.audience {
+  margin-top: 16px;
+  max-width: 400px;
+}
+
+.audience-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.audience-label {
+  width: 60px;
+}
+
+.audience-bar {
+  height: 16px;
+  background: #3949ab;
+  border-radius: 3px;
+}
