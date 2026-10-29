@@ -1,0 +1,95 @@
+body {
+  background: #f4f6fb;
+  color: #222;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: red;
+  font-weight: bold;
+}
+
+.content {
+  padding: 16px 0;
+}
+
+.footer {
+  padding: 16px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.error {
+  color: red;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.filters {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table .left {
+  text-align: left;
+}
+
+.question-text {
+  font-size: 18px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.options li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.options li.correct {
+  background: #4caf50;
+  color: #fff;
+}
