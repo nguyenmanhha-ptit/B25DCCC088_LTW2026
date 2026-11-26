@@ -67,3 +67,34 @@ td input[type='number'] {
 .match-form button {
   align-self: flex-end;
 }
+
+.app.light {
+  background: #ffffff;
+  color: #18212c;
+}
+
+.app.dark {
+  background: #1f2430;
+  color: #e8eaf0;
+}
+
+.app.dark th,
+.app.dark td {
+  border-color: #4a5163;
+}
+
+.notice {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #2e7d32;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.goal-result {
+  font-weight: bold;
+}
