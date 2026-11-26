@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+td.left {
+  text-align: left;
+}
+
+tr.last {
+  color: #c62828;
+}
+
+tr.draw {
+  background: rgba(255, 193, 7, 0.25);
+}
+
+td input[type='number'] {
+  width: 56px;
+}
+
+.match-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field p[role='alert'] {
+  margin: 0;
+  color: #c62828;
+  font-size: 14px;
+  max-width: 220px;
+}
+
+.match-form button {
+  align-self: flex-end;
+}
