@@ -98,3 +98,21 @@ td input[type='number'] {
 .goal-result {
   font-weight: bold;
 }
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.distribution .bar {
+  display: inline-block;
+  height: 10px;
+  background: #1976d2;
+  vertical-align: middle;
+}
+
+.reset {
+  margin-top: 12px;
+}
